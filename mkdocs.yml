@@ -9,6 +9,7 @@ use_directory_urls: true
 theme:
   name: material
   language: ru
+  custom_dir: overrides
   features:
     - navigation.instant
     - navigation.tracking
@@ -22,6 +23,7 @@ theme:
   font:
     text: Inter
     code: JetBrains Mono
+
 
 plugins:
   - search
@@ -46,7 +48,6 @@ markdown_extensions:
 
 not_in_nav: |
   /index.md 
-  /404.md     
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js

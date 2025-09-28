@@ -10,4 +10,4 @@ hide:
 
 ### [[notes/os-hard/index|Операционные системы (hard)]]
 
-### [[notes/cpp-adv/index|C++ (advanced)]]
+### [[notes/cpp/index|C++ (advanced)]]
