@@ -12,6 +12,10 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
+    - navigation.sections
+    - navigation.path       
+    - navigation.indexes    
+    - navigation.top 
     - content.code.copy
 
 plugins:
