@@ -2,6 +2,7 @@
 title: Конспекты
 hide:
   - toc
+  - navigation
 ---
 
 ## [[algorithms/index|Алгоритмы и структуры данных]]

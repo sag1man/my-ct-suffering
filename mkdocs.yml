@@ -18,10 +18,7 @@ theme:
     - navigation.top 
     - content.code.copy
   palette:
-    - scheme: default
-      toggle: { icon: material/weather-night, name: Тёмная тема }
     - scheme: slate
-      toggle: { icon: material/weather-sunny, name: Светлая тема }
   font:
     text: Inter
     code: JetBrains Mono
@@ -32,6 +29,7 @@ plugins:
       wikilinks: true
       default_extension: .md
       source_directory: notes
+  - awesome-pages
 
 markdown_extensions:
   - admonition
