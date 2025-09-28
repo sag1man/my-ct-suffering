@@ -1,6 +1,6 @@
 ---
 title: notes
-
+hidden: true 
 ---
 
 ## [[algorithms/index|Алгоритмы и структуры данных]]
