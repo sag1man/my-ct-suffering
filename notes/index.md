@@ -1,8 +1,6 @@
 ---
-title: Конспекты
-hide:
-  - toc
-  - navigation
+title: notes
+
 ---
 
 ## [[algorithms/index|Алгоритмы и структуры данных]]
