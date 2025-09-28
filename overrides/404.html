@@ -1,0 +1,12 @@
+{% extends "main.html" %}
+{% block content %}
+  <article class="md-content__inner md-typeset">
+    <h1>404 — Страница не найдена</h1>
+    <p>Вы делаете что-то неправильно(</p>
+    <p>
+      <a class="md-button md-button--primary" href="{{ nav.homepage.url | url }}">
+        На главную
+      </a>
+    </p>
+  </article>
+{% endblock %}
