@@ -1,0 +1,40 @@
+site_name: sag1man-ct-notes
+site_url: https://sag1man.github.io/my-ct-suffering/
+repo_url: https://github.com/sag1man/my-ct-suffering
+repo_name: sag1man/my-ct-suffering
+
+docs_dir: notes
+use_directory_urls: true
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - content.code.copy
+
+plugins:
+  - search
+  - roamlinks:
+      wikilinks: true
+      default_extension: .md
+      source_directory: notes
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums: true
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js
+  - javascripts/katex.js
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
