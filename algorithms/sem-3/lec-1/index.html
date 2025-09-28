@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://sag1man.github.io/my-ct-suffering/algorithms/s3/1-DFS-and-TopSort/">
+        <link rel="canonical" href="https://sag1man.github.io/my-ct-suffering/algorithms/sem-3/lec-1/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Графы - sag1man-ct-notes</title>
+        <title>DFS, TopSort и SCC - sag1man-ct-notes</title>
       
     
     
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Графы
+              DFS, TopSort и SCC
             
           </span>
         </div>
@@ -276,7 +276,7 @@
   
   
   <span class="md-ellipsis">
-    S3
+    Sem 3
     
   </span>
   
@@ -287,7 +287,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_1">
             <span class="md-nav__icon md-icon"></span>
-            S3
+            Sem 3
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -304,15 +304,13 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   
   <span class="md-ellipsis">
-    Графы
+    DFS, TopSort и SCC
     
   </span>
   
@@ -325,7 +323,7 @@
   
   
   <span class="md-ellipsis">
-    Графы
+    DFS, TopSort и SCC
     
   </span>
   
@@ -338,8 +336,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -348,37 +344,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Обозначения:
+      Графы
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Как хранить граф
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Как хранить граф">
+    <nav class="md-nav" aria-label="Графы">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#n-times-n" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      Матрица смежности \(n \times n\)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      Списки смежности
+      Как хранить граф
     </span>
   </a>
   
@@ -400,44 +378,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      Идея алгоритма
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       Компоненты связности (неор. граф)
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Компоненты связности (неор. граф)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      Определение
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      Утверждения
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -463,30 +408,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Неориентированный граф">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      Определения
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      Утверждения
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -495,39 +416,6 @@
       Ориентированный граф
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Ориентированный граф">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_14" class="md-nav__link">
-    <span class="md-ellipsis">
-      Определения
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_15" class="md-nav__link">
-    <span class="md-ellipsis">
-      Утверждение
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Для классификации ребер удобно использовать раскраску в 3 цвета:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -547,44 +435,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_16" class="md-nav__link">
-    <span class="md-ellipsis">
-      Определение
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_17" class="md-nav__link">
-    <span class="md-ellipsis">
-      Утверждение
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#dfs_1" class="md-nav__link">
     <span class="md-ellipsis">
       Через DFS
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Через DFS">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_18" class="md-nav__link">
-    <span class="md-ellipsis">
-      Утверждение
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -594,63 +449,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_19" class="md-nav__link">
+  <a href="#scc" class="md-nav__link">
     <span class="md-ellipsis">
-      Компоненты сильной связности (КСС)
+      Компоненты сильной связности (SCC)
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Компоненты сильной связности (КСС)">
+    <nav class="md-nav" aria-label="Компоненты сильной связности (SCC)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_20" class="md-nav__link">
     <span class="md-ellipsis">
-      Определения
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_21" class="md-nav__link">
-    <span class="md-ellipsis">
       Алгоритм Косарайю
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Алгоритм Косарайю">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_22" class="md-nav__link">
-    <span class="md-ellipsis">
-      Идея алгоритма
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_23" class="md-nav__link">
-    <span class="md-ellipsis">
-      Доказательство
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_24" class="md-nav__link">
-    <span class="md-ellipsis">
-      Пояснение:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -700,8 +513,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -710,37 +521,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Обозначения:
+      Графы
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Как хранить граф
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Как хранить граф">
+    <nav class="md-nav" aria-label="Графы">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#n-times-n" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      Матрица смежности \(n \times n\)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      Списки смежности
+      Как хранить граф
     </span>
   </a>
   
@@ -762,44 +555,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      Идея алгоритма
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       Компоненты связности (неор. граф)
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Компоненты связности (неор. граф)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      Определение
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      Утверждения
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -825,30 +585,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Неориентированный граф">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      Определения
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      Утверждения
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -857,39 +593,6 @@
       Ориентированный граф
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Ориентированный граф">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_14" class="md-nav__link">
-    <span class="md-ellipsis">
-      Определения
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_15" class="md-nav__link">
-    <span class="md-ellipsis">
-      Утверждение
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Для классификации ребер удобно использовать раскраску в 3 цвета:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -909,44 +612,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_16" class="md-nav__link">
-    <span class="md-ellipsis">
-      Определение
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_17" class="md-nav__link">
-    <span class="md-ellipsis">
-      Утверждение
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#dfs_1" class="md-nav__link">
     <span class="md-ellipsis">
       Через DFS
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Через DFS">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_18" class="md-nav__link">
-    <span class="md-ellipsis">
-      Утверждение
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -956,63 +626,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_19" class="md-nav__link">
+  <a href="#scc" class="md-nav__link">
     <span class="md-ellipsis">
-      Компоненты сильной связности (КСС)
+      Компоненты сильной связности (SCC)
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Компоненты сильной связности (КСС)">
+    <nav class="md-nav" aria-label="Компоненты сильной связности (SCC)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_20" class="md-nav__link">
     <span class="md-ellipsis">
-      Определения
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_21" class="md-nav__link">
-    <span class="md-ellipsis">
       Алгоритм Косарайю
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Алгоритм Косарайю">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_22" class="md-nav__link">
-    <span class="md-ellipsis">
-      Идея алгоритма
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_23" class="md-nav__link">
-    <span class="md-ellipsis">
-      Доказательство
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_24" class="md-nav__link">
-    <span class="md-ellipsis">
-      Пояснение:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1040,13 +668,14 @@
   
 
 
-<h1 id="_1">Графы<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="dfs-topsort-scc">DFS, TopSort и SCC<a class="headerlink" href="#dfs-topsort-scc" title="Permanent link">&para;</a></h1>
+<h2 id="_1">Графы<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <h5 id="_2">Обозначения:<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h5>
 <ul>
 <li><span class="arithmatex">\(n\)</span> - число вершин, <span class="arithmatex">\(m\)</span> - число рёбер</li>
 <li>Граф может быть <strong>ориентированным</strong> или <strong>неориентированным</strong></li>
 </ul>
-<h2 id="_3">Как хранить граф<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_3">Как хранить граф<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <h5 id="n-times-n">Матрица смежности <span class="arithmatex">\(n \times n\)</span><a class="headerlink" href="#n-times-n" title="Permanent link">&para;</a></h5>
 <ul>
 <li>Ячейка <span class="arithmatex">\(\mathcal (i, j) = 1\)</span>, если есть ребро <span class="arithmatex">\(\mathcal i \to j\)</span>, иначе <span class="arithmatex">\(0\)</span></li>
@@ -1144,19 +773,19 @@
 </ul>
 <p>Так как <span class="arithmatex">\(time_{out}(u) &gt; time_{out}(v)\)</span>, мы можем просто отсортировать вершины по <span class="arithmatex">\(time_{out}\)</span> и тогда получим TopSort. Модифицировав DFS алгоритм, встроим сортировку в него и получим асимптотику <span class="arithmatex">\(\mathcal O(n + m)\)</span>.</p>
 <hr />
-<h2 id="_19">Компоненты сильной связности (КСС)<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h2>
-<h5 id="_20">Определения<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h5>
+<h2 id="scc">Компоненты сильной связности (SCC)<a class="headerlink" href="#scc" title="Permanent link">&para;</a></h2>
+<h5 id="_19">Определения<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h5>
 <ul>
 <li>Отношение сильной связности - <span class="arithmatex">\(u\)</span> и <span class="arithmatex">\(v\)</span> сильно связаны если существуют пути <span class="arithmatex">\(u \leadsto v\)</span> и <span class="arithmatex">\(v \leadsto u\)</span>.</li>
 <li>Компонента сильной связности - множество вершин, где для каждой пары верно отношение сильной связности.</li>
 <li>Конденсация графа - это когда мы сжимаем все целые компоненты до вершин, сохраняя ребра между ними (по факту позволяет нам свести граф к ацикличному).</li>
 </ul>
-<h3 id="_21">Алгоритм Косарайю<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
-<h5 id="_22">Идея алгоритма<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h5>
+<h3 id="_20">Алгоритм Косарайю<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<h5 id="_21">Идея алгоритма<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h5>
 <ul>
 <li>Обрабатывать КСС в порядке убывания максимального <span class="arithmatex">\(time_{out}\)</span> по их вершинам.</li>
 </ul>
-<h5 id="_23">Доказательство<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h5>
+<h5 id="_22">Доказательство<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h5>
 <p>Пусть для компоненты сильной связности <span class="arithmatex">\(c\)</span>:
 $$
 time_{out}(c_1) = max_{v∈c_1} (time_{out}(v))
@@ -1169,7 +798,7 @@ $$ </p>
 <li>Теперь хотим выделить <span class="arithmatex">\(с_2\)</span>, для этого опять найдем вершину с максимальным <span class="arithmatex">\(time_{out}\)</span> кроме уже посещенных, и повторим всё как при поиске <span class="arithmatex">\(c_1\)</span>.</li>
 <li>Повторять пока не закончим)</li>
 </ol>
-<h5 id="_24">Пояснение:<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h5>
+<h5 id="_23">Пояснение:<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h5>
 <ul>
 <li>Это работает потому что мы можем попаcть либо в текущую компоненту, либо предыдущую, которую мы уже выделили и отметили посещенной.</li>
 </ul>
