@@ -4,4 +4,4 @@ hide:
   - toc
 ---
 
-semester 
+[[index|На главную]]

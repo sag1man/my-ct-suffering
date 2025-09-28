@@ -9,7 +9,7 @@ use_directory_urls: true
 theme:
   name: material
   language: ru
-  custom_dir: overrides
+  custom_dir: notes/overrides
   features:
     - navigation.instant
     - navigation.tracking
