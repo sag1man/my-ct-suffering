@@ -8,22 +8,26 @@
       
       
       
+        <link rel="canonical" href="https://sag1man.github.io/my-ct-suffering/notes/os-hard/s3/lec-2/">
+      
+      
+        <link rel="prev" href="../../">
       
       
       
-      <link rel="icon" href="/my-ct-suffering/assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
     
     
       
-        <title>sag1man-ct-notes</title>
+        <title>Lec 2 - sag1man-ct-notes</title>
       
     
     
-      <link rel="stylesheet" href="/my-ct-suffering/assets/stylesheets/main.e53b48f4.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.e53b48f4.min.css">
       
         
-        <link rel="stylesheet" href="/my-ct-suffering/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,9 +48,9 @@
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     
-      <link rel="stylesheet" href="/my-ct-suffering/styles/obsidian.css">
+      <link rel="stylesheet" href="../../../../styles/obsidian.css">
     
-    <script>__md_scope=new URL("/my-ct-suffering/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#oslinux-process-management" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -83,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
-    <a href="/my-ct-suffering/." title="sag1man-ct-notes" class="md-header__button md-logo" aria-label="sag1man-ct-notes" data-md-component="logo">
+    <a href="../../../.." title="sag1man-ct-notes" class="md-header__button md-logo" aria-label="sag1man-ct-notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -103,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Lec 2
             
           </span>
         </div>
@@ -205,7 +214,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/my-ct-suffering/." title="sag1man-ct-notes" class="md-nav__button md-logo" aria-label="sag1man-ct-notes" data-md-component="logo">
+    <a href="../../../.." title="sag1man-ct-notes" class="md-nav__button md-logo" aria-label="sag1man-ct-notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -232,8 +241,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -254,11 +265,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
@@ -274,7 +285,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Notes
@@ -310,7 +321,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/my-ct-suffering/notes/algorithms/" class="md-nav__link ">
+            <a href="../../../algorithms/" class="md-nav__link ">
               
   
   
@@ -391,7 +402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/my-ct-suffering/notes/algorithms/semestr-3/lec-1/" class="md-nav__link">
+      <a href="../../../algorithms/semestr-3/lec-1/" class="md-nav__link">
         
   
   
@@ -414,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/my-ct-suffering/notes/algorithms/semestr-3/lec-3/" class="md-nav__link">
+      <a href="../../../algorithms/semestr-3/lec-3/" class="md-nav__link">
         
   
   
@@ -473,7 +484,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/my-ct-suffering/notes/cpp-adv/" class="md-nav__link ">
+            <a href="../../../cpp-adv/" class="md-nav__link ">
               
   
   
@@ -533,7 +544,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/my-ct-suffering/notes/discrete-math/" class="md-nav__link ">
+            <a href="../../../discrete-math/" class="md-nav__link ">
               
   
   
@@ -612,7 +623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/my-ct-suffering/notes/discrete-math/semestr-3/lec-1/" class="md-nav__link">
+      <a href="../../../discrete-math/semestr-3/lec-1/" class="md-nav__link">
         
   
   
@@ -648,6 +659,8 @@
                 
   
   
+    
+  
   
   
     
@@ -665,15 +678,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/my-ct-suffering/notes/os-hard/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   
@@ -692,7 +705,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_4">
             <span class="md-nav__icon md-icon"></span>
             Os hard
@@ -705,8 +718,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -718,11 +733,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4_2" checked>
         
           
           <label class="md-nav__link" for="__nav_1_4_2" id="__nav_1_4_2_label" tabindex="0">
@@ -738,7 +753,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_4_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_4_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_4_2">
             <span class="md-nav__icon md-icon"></span>
             S3
@@ -749,10 +764,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/my-ct-suffering/notes/os-hard/s3/lec-2/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Lec 2
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -763,6 +798,84 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#oslinux-process-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      OS/Linux process management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OS/Linux process management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vfs-and-block-io-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      VFS and Block I/O management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Stack
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-calls-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      System calls overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-call-parameters-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      System call parameters handling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#threads" class="md-nav__link">
+    <span class="md-ellipsis">
+      Threads
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -809,6 +922,74 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#oslinux-process-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      OS/Linux process management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OS/Linux process management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vfs-and-block-io-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      VFS and Block I/O management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Stack
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-calls-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      System calls overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-call-parameters-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      System call parameters handling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#threads" class="md-nav__link">
+    <span class="md-ellipsis">
+      Threads
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -819,8 +1000,45 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+  <h1>Lec 2</h1>
+
+<h2 id="oslinux-process-management">OS/Linux process management<a class="headerlink" href="#oslinux-process-management" title="Permanent link">&para;</a></h2>
+<p>task - абстракция процесса, но для каждого процесса содается структура (task_struct), хранящую указатель на ресурсы, </p>
+<h3 id="vfs-and-block-io-management">VFS and Block I/O management<a class="headerlink" href="#vfs-and-block-io-management" title="Permanent link">&para;</a></h3>
+<p>VFS - абстракция которая подходит для любой ФС, как бы базовый класс, на который опираются ФС
+В ней есть 3 сущности
+- dentry - СД соответсвующая директории
+- inode - Соответсвуют файлу или бло
+- FILE - Соответвуют конкретные блоки на физиечском устройстве</p>
+<h3 id="network-stack">Network Stack<a class="headerlink" href="#network-stack" title="Permanent link">&para;</a></h3>
+<p>Ещё один вариант interprocess communication (но можно и на разных устройствах)
+Socet - абстракция между процессом и транспортным уровнем</p>
+<h2 id="system-calls-overview">System calls overview<a class="headerlink" href="#system-calls-overview" title="Permanent link">&para;</a></h2>
+<p>По факту обычные функции, которым нужны ресурсы, доступные в kernel space. Например C использует библиотеку libc, каждому системному вызову соответсует некоторое число, которое ззаписывается в X8, аргументы вызова записываются в X0-X7, после чего запускается прерывание, ядро производит операцию, после чего результат (если есть) кладется в X0</p>
+<h2 id="system-call-parameters-handling">System call parameters handling<a class="headerlink" href="#system-call-parameters-handling" title="Permanent link">&para;</a></h2>
+<p>Указатели проверяю</p>
+<h2 id="threads">Threads<a class="headerlink" href="#threads" title="Permanent link">&para;</a></h2>
+<p>Пото</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -862,16 +1080,16 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/my-ct-suffering/", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.path", "navigation.indexes", "navigation.top", "content.code.copy"], "search": "/my-ct-suffering/assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.path", "navigation.indexes", "navigation.top", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
     
     
-      <script src="/my-ct-suffering/assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
       
-        <script src="/my-ct-suffering/javascripts/katex.js"></script>
+        <script src="../../../../javascripts/katex.js"></script>
       
     
   </body>
