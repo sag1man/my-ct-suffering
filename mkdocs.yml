@@ -17,6 +17,14 @@ theme:
     - navigation.indexes    
     - navigation.top 
     - content.code.copy
+  palette:
+    - scheme: default
+      toggle: { icon: material/weather-night, name: Тёмная тема }
+    - scheme: slate
+      toggle: { icon: material/weather-sunny, name: Светлая тема }
+  font:
+    text: Inter
+    code: JetBrains Mono
 
 plugins:
   - search
@@ -43,3 +51,4 @@ extra_javascript:
   - javascripts/katex.js
 extra_css:
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
+  - styles/obsidian.css
