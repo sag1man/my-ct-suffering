@@ -7,4 +7,4 @@ hide:
 [[index|На главную]]
 
 ## Семестры
-- [[algorithms/semestr-3/index|Семестр 3]]
+- [[notes/algorithms/semester-3/index|Семестр 3]]
