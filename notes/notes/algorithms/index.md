@@ -4,15 +4,12 @@ hide:
   - toc
 ---
 
-Здесь вы можете найти конспекты по предмету "Алгоритмы и Структуры Данных", отсортированные по семестрам
+[[index|Конспекты]] / [[notes/algorithms/index|Алгоритмы и Структуры Данных]]
+
+---
 
 ## Алгоритмы и Структуры Данных
 ### Семестры
 - [[notes/algorithms/semester-1/index|Семестр 1]]
 - [[notes/algorithms/semester-2/index|Семестр 2]]
 - [[notes/algorithms/semester-3/index|Семестр 3]]
-
-
-
----
-[[index|На главную]]
