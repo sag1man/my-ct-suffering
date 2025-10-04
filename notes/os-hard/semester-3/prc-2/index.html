@@ -8,28 +8,26 @@
       
       
       
-        <link rel="canonical" href="https://sag1man.github.io/my-ct-suffering/notes/algorithms/semester-1/">
+        <link rel="canonical" href="https://sag1man.github.io/my-ct-suffering/notes/os-hard/semester-3/prc-2/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../lec-2/">
       
       
-        <link rel="next" href="../semester-2/">
       
-      
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
     
     
       
-        <title>Семестр 1 - sag1man-ct-notes</title>
+        <title>Memory allocators - sag1man-ct-notes</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.2a3383ac.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.2a3383ac.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +48,9 @@
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     
-      <link rel="stylesheet" href="../../../styles/obsidian.css">
+      <link rel="stylesheet" href="../../../../styles/obsidian.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -94,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
-    <a href="../../.." title="sag1man-ct-notes" class="md-header__button md-logo" aria-label="sag1man-ct-notes" data-md-component="logo">
+    <a href="../../../.." title="sag1man-ct-notes" class="md-header__button md-logo" aria-label="sag1man-ct-notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -114,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Семестр 1
+              Memory allocators
             
           </span>
         </div>
@@ -207,8 +205,6 @@
           
             
               
-                
-              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -218,7 +214,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="sag1man-ct-notes" class="md-nav__button md-logo" aria-label="sag1man-ct-notes" data-md-component="logo">
+    <a href="../../../.." title="sag1man-ct-notes" class="md-nav__button md-logo" aria-label="sag1man-ct-notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -300,8 +296,6 @@
                 
   
   
-    
-  
   
   
     
@@ -323,15 +317,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_1" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../../algorithms/" class="md-nav__link ">
               
   
   
@@ -350,7 +344,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1_1">
             <span class="md-nav__icon md-icon"></span>
             Algorithms
@@ -363,8 +357,6 @@
                 
   
   
-    
-  
   
   
     
@@ -380,15 +372,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_1_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_1_2" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../../algorithms/semester-1/" class="md-nav__link ">
               
   
   
@@ -402,7 +394,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_1_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_1_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1_1_2">
             <span class="md-nav__icon md-icon"></span>
             Semester 1
@@ -446,7 +438,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../semester-2/" class="md-nav__link ">
+            <a href="../../../algorithms/semester-2/" class="md-nav__link ">
               
   
   
@@ -510,7 +502,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../semester-3/" class="md-nav__link ">
+            <a href="../../../algorithms/semester-3/" class="md-nav__link ">
               
   
   
@@ -545,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../semester-3/lec-1/" class="md-nav__link">
+      <a href="../../../algorithms/semester-3/lec-1/" class="md-nav__link">
         
   
   
@@ -568,7 +560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../semester-3/lec-2/" class="md-nav__link">
+      <a href="../../../algorithms/semester-3/lec-2/" class="md-nav__link">
         
   
   
@@ -591,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../semester-3/lec-3/" class="md-nav__link">
+      <a href="../../../algorithms/semester-3/lec-3/" class="md-nav__link">
         
   
   
@@ -654,7 +646,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../cpp/" class="md-nav__link ">
+            <a href="../../../cpp/" class="md-nav__link ">
               
   
   
@@ -709,7 +701,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../cpp/semester-2/" class="md-nav__link ">
+            <a href="../../../cpp/semester-2/" class="md-nav__link ">
               
   
   
@@ -767,7 +759,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../cpp/semester-3/" class="md-nav__link ">
+            <a href="../../../cpp/semester-3/" class="md-nav__link ">
               
   
   
@@ -835,7 +827,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../discrete-math/" class="md-nav__link ">
+            <a href="../../../discrete-math/" class="md-nav__link ">
               
   
   
@@ -914,7 +906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../discrete-math/semester-3/lec-1/" class="md-nav__link">
+      <a href="../../../discrete-math/semester-3/lec-1/" class="md-nav__link">
         
   
   
@@ -950,6 +942,8 @@
                 
   
   
+    
+  
   
   
     
@@ -967,15 +961,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../os-hard/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   
@@ -994,7 +988,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_4">
             <span class="md-nav__icon md-icon"></span>
             Os hard
@@ -1007,8 +1001,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1022,11 +1018,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4_2" checked>
         
           
           <label class="md-nav__link" for="__nav_1_4_2" id="__nav_1_4_2_label" tabindex="0">
@@ -1042,7 +1038,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_4_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_4_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_4_2">
             <span class="md-nav__icon md-icon"></span>
             Semester 3
@@ -1056,7 +1052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../os-hard/semester-3/lec-2/" class="md-nav__link">
+      <a href="../lec-2/" class="md-nav__link">
         
   
   
@@ -1076,10 +1072,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../os-hard/semester-3/prc-2/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Memory allocators
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1090,6 +1106,57 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Аллокатор
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Аллокатор">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linked-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Реализация на linked-list (примитивный вариант)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buddy-allocator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buddy allocator (доработанный вариант)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1126,9 +1193,7 @@
             
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1147,17 +1212,26 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Алгоритмы и Структуры Данных
+      Аллокатор
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Алгоритмы и Структуры Данных">
+    <nav class="md-nav" aria-label="Аллокатор">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#linked-list" class="md-nav__link">
     <span class="md-ellipsis">
-      Семестр 1
+      Реализация на linked-list (примитивный вариант)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buddy-allocator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buddy allocator (доработанный вариант)
     </span>
   </a>
   
@@ -1181,22 +1255,72 @@
               <article class="md-content__inner md-typeset">
                 
                   
-  
-
 
 
   
   
 
 
-  <h1>Семестр 1</h1>
-
-<p><a href="../../os-hard/">Конспекты</a> / <a href="../">Алгоритмы и Структуры Данных</a> / <a href="./">Семестр 1</a></p>
-<hr />
-<h2 id="_1">Алгоритмы и Структуры Данных<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<h3 id="1">Семестр 1<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<h1 id="memory-allocators">Memory allocators<a class="headerlink" href="#memory-allocators" title="Permanent link">&para;</a></h1>
+<h2 id="_1">Аллокатор<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h5 id="_2">Определение<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h5>
+<blockquote>
+<p>Аллокатор - это сущность, которая умеет аллоцировать и освобождать память, то есть выполнять операции:
+- <code>malloc(n)</code> <span class="arithmatex">\(\to\)</span> <code>address</code>
+- <code>free(address)</code></p>
+</blockquote>
+<h3 id="linked-list">Реализация на linked-list (примитивный вариант)<a class="headerlink" href="#linked-list" title="Permanent link">&para;</a></h3>
+<h5 id="_3">Идея<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h5>
 <ul>
-<li><a href="./lec-1.md">Лекция 1 - TBA</a></li>
+<li>Можно поделить память на блоки, проинициализируем связный список обозначающий наши блоки. </li>
+<li>При запросе программы будем брать первый блок, удаляя его из листа, и будем класть при освобождении.</li>
+</ul>
+<h5 id="_4">Проблемы<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Если блоки большие - у процесса может быть много пустого пространства, которое ему не нужно.</li>
+<li>Если маленькие - будем выделять сразу много блоков (неэффективно).</li>
+<li>Большая проблема - фрагментация, когда у нас оставшееся место получается разрозненным, мы не можем его выделить сразу полостью</li>
+</ul>
+<p><img alt="pictures/os-hard-s3-prc2-img1.png" src="../../../../pictures/os-hard-s3-prc2-img1.png" /></p>
+<h3 id="buddy-allocator">Buddy allocator (доработанный вариант)<a class="headerlink" href="#buddy-allocator" title="Permanent link">&para;</a></h3>
+<h5 id="_5">Эффективность<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h5>
+<blockquote>
+<ul>
+<li>Умеет аллоцировать блоки размера <span class="arithmatex">\(2^i\)</span></li>
+<li>Выделает блоки за <span class="arithmatex">\(\mathcal O(\log{n})\)</span></li>
+</ul>
+</blockquote>
+<h4 id="_6">Реализация<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Введем понятие <code>level</code> это число от <code>0</code> до <code>k</code>, которое отвечает за размер блока. </li>
+<li>Для оптимизации договоримся, что минимальный блок не 1 байт, а чуть больше (захардкодим константу <code>MIN_BLOCK_SIZE</code>).</li>
+<li>Тогда зададим размер блока как <code>MIN_BLOCK_SIZE</code> * <span class="arithmatex">\(2^{level}\)</span>.</li>
+</ul>
+<h5 id="listlevel"><code>list[level]</code><a class="headerlink" href="#listlevel" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Создадим массив <code>list[level]</code>, где для каждого возможного размера блока заведем по связному списку блоков</li>
+</ul>
+<h5 id="_7">Служебные массивы<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h5>
+<ul>
+<li><code>free[level][id]</code> - способ проверять свободен ли определённый блок, определённого размера (используем bitset для экономии памяти)</li>
+<li><code>split[level][id]</code> - способ проверять, не разделен ли определённый блок (снова используем bitset)</li>
+</ul>
+<p><img alt="pictures/os-hard-s3-prc2-img2.png" src="../../../../pictures/os-hard-s3-prc2-img2.png" /></p>
+<p>С помощью двух этим массивов мы и как раз можем быстро понимать текущее состояние памяти, для управления ею</p>
+<h5 id="_8">Выделение памяти<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Изначально проинициализируем память одним блоком максимального размера.</li>
+<li>Смотрим на свободные блоки: если есть свободный блок, но его размер больше в 2+ раза, чем запрашиваемая память, то мы его сплитим на блоки в 2 раза меньше, и повторяем проверку</li>
+</ul>
+<p><img alt="pictures/os-hard-s3-prc2-img3.png" src="../../../../pictures/os-hard-s3-prc2-img3.png" /></p>
+<h5 id="_9">Освобождение памяти<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Меняем статус блока на <code>free</code>, при возможности мерджим соседние блоки, пока это возможно</li>
+</ul>
+<h5 id="_10">Оптимизация<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Заметим, что <code>free</code> мы используем только чтобы мерджить 2 соседних блока. </li>
+<li>Заметим, что мы можем хранить free не для каждого блока, для каждой пары хранить xor от <code>free</code>.</li>
 </ul>
 
 
@@ -1205,13 +1329,8 @@
 
 
 
-  
-  
 
 
-
-
-  
 
 
 
@@ -1257,16 +1376,16 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.path", "navigation.indexes", "navigation.top", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.path", "navigation.indexes", "navigation.top", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
       
-        <script src="../../../javascripts/katex.js"></script>
+        <script src="../../../../javascripts/katex.js"></script>
       
     
   </body>
