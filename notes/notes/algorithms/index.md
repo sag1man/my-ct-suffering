@@ -9,7 +9,8 @@ hide:
 ---
 
 ## Алгоритмы и Структуры Данных
-### Семестры
-- [[notes/algorithms/semester-1/index|Семестр 1]]
-- [[notes/algorithms/semester-2/index|Семестр 2]]
-- [[notes/algorithms/semester-3/index|Семестр 3]]
+### Семестр 3
+- [[notes/algorithms/sem3-lec1|Лекция 1 - DFS, TopSort и SCC]]
+- [[notes/algorithms/sem3-lec2|Лекция 2 - Bridges and Articulation Points]]
+- [[notes/algorithms/sem3-lec3|Лекция 3 - TBA]]
+- [[notes/algorithms/sem3-lec4|Лекция 4 - TBA]]

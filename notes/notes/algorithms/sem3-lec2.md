@@ -1,4 +1,9 @@
 # Bridges and Articulation Points
+---
+
+[[index|Конспекты]] / [[notes/algorithms/index|Алгоритмы и Структуры Данных]] / [[notes/algorithms/sem3-lec2|Лекция 2 - Bridges and Articulation Points]]
+
+---
 ## Мосты (Bridges)
 ##### Определение
 - **Мост**: ребро в графе, удаление которого увеличивает число компонент (иными словами, мост не входит ни в один цикл). 

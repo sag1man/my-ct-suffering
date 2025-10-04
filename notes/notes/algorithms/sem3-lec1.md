@@ -1,4 +1,10 @@
 # DFS, TopSort and SCC
+---
+
+[[index|Конспекты]] / [[notes/algorithms/index|Алгоритмы и Структуры Данных]] / [[notes/algorithms/sem3-lec1|Лекция 1 - DFS, TopSort и SCC]]
+
+--- 
+
 ## Графы
 ##### Обозначения:
 -  $n$ - число вершин, $m$ - число рёбер
