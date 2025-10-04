@@ -1347,28 +1347,28 @@
 <li>Для оптимизации договоримся, что минимальный блок не 1 байт, а чуть больше (захардкодим константу <code>MIN_BLOCK_SIZE</code>).</li>
 <li>Тогда зададим размер блока как <code>MIN_BLOCK_SIZE</code> * <span class="arithmatex">\(2^{level}\)</span>.</li>
 </ul>
-<h5 id="listlevel"><code>list[level]</code><a class="headerlink" href="#listlevel" title="Permanent link">&para;</a></h5>
+<h5 id="_7">Блоки памяти<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h5>
 <ul>
 <li>Создадим массив <code>list[level]</code>, где для каждого возможного размера блока заведем по связному списку блоков</li>
 </ul>
-<h5 id="_7">Служебные массивы<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h5>
+<h5 id="_8">Служебные массивы<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h5>
 <ul>
 <li><code>free[level][id]</code> - способ проверять свободен ли определённый блок, определённого размера (используем bitset для экономии памяти)</li>
 <li><code>split[level][id]</code> - способ проверять, не разделен ли определённый блок (снова используем bitset)</li>
 </ul>
 <p><img alt="pictures/os-hard-sem3-prc2-img2.png" src="../../../pictures/os-hard-sem3-prc2-img2.png" /></p>
 <p>С помощью двух этим массивов мы и как раз можем быстро понимать текущее состояние памяти, для управления ею</p>
-<h5 id="_8">Выделение памяти<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h5>
+<h5 id="_9">Выделение памяти<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h5>
 <ul>
 <li>Изначально проинициализируем память одним блоком максимального размера.</li>
 <li>Смотрим на свободные блоки: если есть свободный блок, но его размер больше в 2+ раза, чем запрашиваемая память, то мы его сплитим на блоки в 2 раза меньше, и повторяем проверку</li>
 </ul>
 <p><img alt="pictures/os-hard-sem3-prc2-img3.png" src="../../../pictures/os-hard-sem3-prc2-img3.png" /></p>
-<h5 id="_9">Освобождение памяти<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h5>
+<h5 id="_10">Освобождение памяти<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h5>
 <ul>
 <li>Меняем статус блока на <code>free</code>, при возможности мерджим соседние блоки, пока это возможно</li>
 </ul>
-<h5 id="_10">Оптимизация<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h5>
+<h5 id="_11">Оптимизация<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h5>
 <ul>
 <li>Заметим, что <code>free</code> мы используем только чтобы мерджить 2 соседних блока. </li>
 <li>Заметим, что мы можем хранить free не для каждого блока, для каждой пары хранить xor от <code>free</code>.</li>
