@@ -1,14 +1,13 @@
 ---
-title: С++
+title: Язык С++
 hide: 
   - toc
 ---
 
-[[index|Конспекты]] / [[notes/cpp/index|С++]]
+[[index|Конспекты]] / [[notes/cpp/index|Язык С++]]
 
 ---
 
-## Язык C++
-### Семестры
-- [[notes/cpp/semester-2/index|Семестр 2 (C++ Intro)]]
-- [[notes/cpp/semester-3/index|Семестр 3 (C++ Advanced)]]
+## Семестр 2
+
+## Семестр 3
