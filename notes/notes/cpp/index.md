@@ -3,6 +3,7 @@ title: Язык С++
 hide: 
   - toc
 ---
+
 ---
 
 [[index|Конспекты]] / [[notes/cpp/index|Язык С++]]

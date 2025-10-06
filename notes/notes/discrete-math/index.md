@@ -3,6 +3,7 @@ title: Дискретная математика
 hide: 
   - toc
 ---
+
 ---
 
 [[index|Конспекты]] / [[notes/discrete-math/index|Дискретная математика]]
