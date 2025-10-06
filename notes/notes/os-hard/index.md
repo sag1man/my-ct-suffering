@@ -3,6 +3,7 @@ title: Операционные системы (hard)
 hide: 
   - toc
 ---
+---
 
 [[index|Конспекты]] / [[notes/os-hard/index|Операционные системы (hard)]]
 
