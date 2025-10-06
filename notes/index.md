@@ -1,9 +1,8 @@
 ---
-title: Конспекты
 hide: 
   - toc
 ---
-
+# Конспекты
 ## Предметы
 - [[notes/algorithms/index|Алгоритмы и структуры данных]]
 - [[notes/discrete-math/index|Дискретная математика]]
