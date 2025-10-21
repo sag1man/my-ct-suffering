@@ -6,7 +6,7 @@ hide:
 
 ---
 
-[[/index|Конспекты]] / [[notes/discrete-math/index|Дискретная математика]]
+[[/my-ct-suffering|Конспекты]] / [[notes/discrete-math/index|Дискретная математика]]
 
 ---
 

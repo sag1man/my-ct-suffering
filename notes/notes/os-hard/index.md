@@ -6,7 +6,7 @@ hide:
 
 ---
 
-[[/index|Конспекты]] / [[notes/os-hard/index|Операционные системы (hard)]]
+[[/my-ct-suffering|Конспекты]] / [[notes/os-hard/index|Операционные системы (hard)]]
 
 --- 
 

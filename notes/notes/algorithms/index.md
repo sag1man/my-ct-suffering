@@ -6,7 +6,7 @@ hide:
 
 ---
 
-[[/index|Конспекты]] / [[notes/algorithms/index|Алгоритмы и Структуры Данных]]
+[[/my-ct-suffering|Конспекты]] / [[notes/algorithms/index|Алгоритмы и Структуры Данных]]
 
 ---
 

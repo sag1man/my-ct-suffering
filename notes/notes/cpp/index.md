@@ -6,7 +6,7 @@ hide:
 
 ---
 
-[[/index|Конспекты]] / [[notes/cpp/index|Язык С++]]
+[[/my-ct-suffering|Конспекты]] / [[notes/cpp/index|Язык С++]]
 
 ---
 
