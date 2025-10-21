@@ -788,7 +788,7 @@
 <li>Если маленькие - будем выделять сразу много блоков (неэффективно).</li>
 <li>Большая проблема - фрагментация, когда у нас оставшееся место получается разрозненным, мы не можем его выделить сразу полостью</li>
 </ul>
-<p><img alt="pictures/os-hard-sem3-prc2-img1.png" src="../../pictures/os-hard-sem3-prc2-img1png" title="pictures/os-hard-sem3-prc2-img1.png" /></p>
+<p><img alt="Фрагментация" src="../../../pictures/os-hard-sem3-prc2-img1.png" /></p>
 <h3 id="buddy-allocator">Buddy allocator (доработанный вариант)<a class="headerlink" href="#buddy-allocator" title="Permanent link">&para;</a></h3>
 <h5 id="_5">Эффективность<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h5>
 <blockquote>
@@ -812,14 +812,14 @@
 <li><code>free[level][id]</code> - способ проверять свободен ли определённый блок, определённого размера (используем bitset для экономии памяти)</li>
 <li><code>split[level][id]</code> - способ проверять, не разделен ли определённый блок (снова используем bitset)</li>
 </ul>
-<p><img alt="pictures/os-hard-sem3-prc2-img2.png" src="../../pictures/os-hard-sem3-prc2-img2png" title="pictures/os-hard-sem3-prc2-img2.png" /></p>
+<p><img alt="Служебные массивы" src="../../../pictures/os-hard-sem3-prc2-img2.png" /></p>
 <p>С помощью двух этим массивов мы и как раз можем быстро понимать текущее состояние памяти, для управления ею</p>
 <h5 id="_9">Выделение памяти<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h5>
 <ul>
 <li>Изначально проинициализируем память одним блоком максимального размера.</li>
 <li>Смотрим на свободные блоки: если есть свободный блок, но его размер больше в 2+ раза, чем запрашиваемая память, то мы его сплитим на блоки в 2 раза меньше, и повторяем проверку</li>
 </ul>
-<p><img alt="pictures/os-hard-sem3-prc2-img3.png" src="../../pictures/os-hard-sem3-prc2-img3png" title="pictures/os-hard-sem3-prc2-img3.png" /></p>
+<p><img alt="Процесс выделения памяти" src="../../../pictures/os-hard-sem3-prc2-img3.png" /></p>
 <h5 id="_10">Освобождение памяти<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h5>
 <ul>
 <li>Меняем статус блока на <code>free</code>, при возможности мерджим соседние блоки, пока это возможно</li>
