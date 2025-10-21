@@ -7,7 +7,7 @@ hide:
 
 ---
 
-[[/index|Конспекты]] / [[notes/algorithms/index|Алгоритмы и Структуры Данных]]
+[Конспекты](/index) / [Алгоритмы и Структуры Данных](/notes/algorithms/index)
 
 ---
 
@@ -18,5 +18,5 @@ hide:
 -
 
 ## Семестр 3
-- [[notes/algorithms/sem3-lec1|Лекция 1 - DFS, TopSort и SCC]]
+- [Лекция 1 - DFS, TopSort и SCC](/notes/algorithms/sem3-lec1)
 - [[notes/algorithms/sem3-lec2|Лекция 2 - Bridges and Articulation Points]]
