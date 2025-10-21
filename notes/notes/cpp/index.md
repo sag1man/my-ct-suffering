@@ -2,11 +2,12 @@
 hide: 
   - toc
 ---
+
 # Язык С++
 
 ---
 
-[[/my-ct-suffering|Конспекты]] / [[notes/cpp/index|Язык С++]]
+[[/index|Конспекты]] / [[notes/cpp/index|Язык С++]]
 
 ---
 

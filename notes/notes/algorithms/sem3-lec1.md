@@ -1,7 +1,7 @@
 # DFS, TopSort and SCC
 ---
 
-[[/my-ct-suffering|Конспекты]] / [[notes/algorithms/index|Алгоритмы и Структуры Данных]] / [[notes/algorithms/sem3-lec1|Лекция 1 - DFS, TopSort и SCC]]
+[[/index|Конспекты]] / [[notes/algorithms/index|Алгоритмы и Структуры Данных]] / [[notes/algorithms/sem3-lec1|Лекция 1 - DFS, TopSort и SCC]]
 
 --- 
 

@@ -1,7 +1,7 @@
 # Bridges and Articulation Points
 ---
 
-[[/my-ct-suffering|Конспекты]] / [[notes/algorithms/index|Алгоритмы и Структуры Данных]] / [[notes/algorithms/sem3-lec2|Лекция 2 - Bridges and Articulation Points]]
+[[/index|Конспекты]] / [[notes/algorithms/index|Алгоритмы и Структуры Данных]] / [[notes/algorithms/sem3-lec2|Лекция 2 - Bridges and Articulation Points]]
 
 ---
 ## Мосты (Bridges)

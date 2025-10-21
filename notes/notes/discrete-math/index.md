@@ -2,11 +2,12 @@
 hide: 
   - toc
 ---
+
 # Дискретная математика
 
 ---
 
-[[/my-ct-suffering|Конспекты]] / [[notes/discrete-math/index|Дискретная математика]]
+[[/index|Конспекты]] / [[notes/discrete-math/index|Дискретная математика]]
 
 ---
 

@@ -2,11 +2,12 @@
 hide: 
   - toc
 ---
+
 # Операционные системы (hard)
 
 ---
 
-[[/my-ct-suffering|Конспекты]] / [[notes/os-hard/index|Операционные системы (hard)]]
+[[/index|Конспекты]] / [[notes/os-hard/index|Операционные системы (hard)]]
 
 --- 
 
