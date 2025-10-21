@@ -1,7 +1,7 @@
 
 ---
 
-[[index|Конспекты]] / [[notes/os-hard/index|Операционные системы (hard)]] / РАЗДЕЛ НЕ ГОТОВ
+[Конспекты](/index.md) / [Операционные системы (hard)](/notes/os-hard/index.md) / [Практика 3 - Copy-on-write fork](/notes/os-hard/sem3-prc3.md)
 
 ---
 
