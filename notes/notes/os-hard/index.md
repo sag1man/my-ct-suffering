@@ -7,7 +7,7 @@ hide:
 
 ---
 
-[[/index|Конспекты]] / [[notes/os-hard/index|Операционные системы (hard)]]
+[Конспекты](/index.md) / [Операционные системы (hard)](/notes/os-hard/index.md)
 
 --- 
 
@@ -15,4 +15,4 @@ hide:
 ### Лекции
 - 
 ### Практики
-- [[notes/os-hard/sem3-prc2|Практика 2 - Memory allocators]]
+- [Практика 2 - Memory allocators]([/notes/os-hard/sem3-prc2.md)

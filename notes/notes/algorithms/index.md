@@ -19,4 +19,4 @@ hide:
 
 ## Семестр 3
 - [Лекция 1 - DFS, TopSort и SCC](/notes/algorithms/sem3-lec1.md)
-- [[notes/algorithms/sem3-lec2|Лекция 2 - Bridges and Articulation Points]]
+- [Лекция 2 - Bridges and Articulation Points](/notes/algorithms/sem3-lec2.md)

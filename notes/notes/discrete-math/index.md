@@ -7,7 +7,7 @@ hide:
 
 ---
 
-[[/index|Конспекты]] / [[notes/discrete-math/index|Дискретная математика]]
+[Конспекты](/index.md) / [Дискретная математика](/notes/discrete-math/index.md)
 
 ---
 

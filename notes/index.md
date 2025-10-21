@@ -5,7 +5,7 @@ hide:
 
 # Конспекты с КТ
 ## Предметы
-- [[/notes/algorithms/index|Алгоритмы и структуры данных]]
-- [[/notes/discrete-math/index|Дискретная математика]]
-- [[/notes/os-hard/index|Операционные системы (hard)]]
-- [[/notes/cpp/index|Язык C++]]
+- [Алгоритмы и структуры данных](/notes/algorithms/index.md)
+- [Дискретная математика](/notes/discrete-math/index.md)
+- [Операционные системы (hard)](/notes/os-hard/index.md)
+- [Язык C++](/notes/cpp/index.md)

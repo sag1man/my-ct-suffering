@@ -7,7 +7,7 @@ hide:
 
 ---
 
-[[/index|Конспекты]] / [[notes/cpp/index|Язык С++]]
+[Конспекты](/index.md) / [Язык C++](/notes/cpp/index.md)
 
 ---
 
