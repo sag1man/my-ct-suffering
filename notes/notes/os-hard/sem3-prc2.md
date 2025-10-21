@@ -1,7 +1,7 @@
 # Memory allocators 
 ---
 
-[[index|Конспекты]] / [[notes/os-hard/index|Операционные системы (hard)]] / [[notes/os-hard/sem3-prc2|Практика 2 - Memory allocators]]
+[[/index|Конспекты]] / [[notes/os-hard/index|Операционные системы (hard)]] / [[notes/os-hard/sem3-prc2|Практика 2 - Memory allocators]]
 
 --- 
 ## Аллокаторы памяти
