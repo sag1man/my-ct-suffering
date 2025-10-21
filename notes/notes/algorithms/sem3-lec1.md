@@ -1,7 +1,7 @@
 # DFS, TopSort and SCC
 ---
 
-[Конспекты](/index) / [Алгоритмы и Структуры Данных](/notes/algorithms/index) / [Лекция 1 - DFS, TopSort и SCC](/notes/algorithms/sem3-lec1)
+[Конспекты](/index.md) / [Алгоритмы и Структуры Данных](/notes/algorithms/index.md) / [Лекция 1 - DFS, TopSort и SCC](/notes/algorithms/sem3-lec1.md)
 
 --- 
 
