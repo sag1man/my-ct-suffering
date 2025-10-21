@@ -24,14 +24,17 @@ theme:
     text: Inter
     code: JetBrains Mono
 
-
 plugins:
   - search
-  - roamlinks:
+  - ezlinks:
       wikilinks: true
-      default_extension: .md
-      source_directory: notes
+      warn_ambiguities: true
+      reference_links: true
   - awesome-pages
+
+validation:
+  links:
+    absolute_links: relative_to_docs
 
 markdown_extensions:
   - admonition
