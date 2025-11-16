@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://sag1man.github.io/my-ct-suffering/notes/algorithms/sem3-lec2/">
+        <link rel="canonical" href="https://sag1man.github.io/my-ct-suffering/notes/os-hard/sem3-prc4/">
       
       
-        <link rel="prev" href="../sem3-lec1/">
+        <link rel="prev" href="../sem3-prc2/">
       
-      
-        <link rel="next" href="../../cpp/">
       
       
         
@@ -25,7 +23,7 @@
     
     
       
-        <title>Bridges and Articulation Points - sag1man-ct-notes</title>
+        <title>xv6-networking - sag1man-ct-notes</title>
       
     
     
@@ -80,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bridges" class="md-skip">
+        <a href="#_1" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -116,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Bridges and Articulation Points
+              xv6-networking
             
           </span>
         </div>
@@ -309,8 +307,6 @@
                 
   
   
-    
-  
   
   
     
@@ -330,15 +326,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_1" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../algorithms/" class="md-nav__link ">
               
   
   
@@ -362,7 +358,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -382,7 +378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sem3-lec1/" class="md-nav__link">
+      <a href="../../algorithms/sem3-lec1/" class="md-nav__link">
         
   
   
@@ -407,35 +403,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Bridges and Articulation Points
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../algorithms/sem3-lec2/" class="md-nav__link">
         
   
   
@@ -451,113 +422,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Содержание">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Содержание
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#bridges" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Мосты (Bridges)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Мосты (Bridges)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Как искать мосты
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Компонента реберной двусвязности
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#articulation-pointscut-vertices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Точки сочленения (Articulation Points/Cut Vertices)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Точки сочленения (Articulation Points/Cut Vertices)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Как искать точки сочленения
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Компонента вершинной двусвязности
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#block-cut-tree" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Block-Cut Tree
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -709,6 +573,8 @@
                 
   
   
+    
+  
   
   
     
@@ -728,15 +594,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../os-hard/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -760,7 +626,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -780,7 +646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../os-hard/sem3-prc2/" class="md-nav__link">
+      <a href="../sem3-prc2/" class="md-nav__link">
         
   
   
@@ -805,10 +671,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../os-hard/sem3-prc4/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    xv6-networking
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -824,6 +715,135 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Сетевой стек
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Драйверы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Реализация общения с железом
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Реализация общения с железом">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Прерывания
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Способы передачи информации
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Реализация сетевого стека
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Реализация сетевого стека">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ethernet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ethernet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcpudp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TCP/UDP
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -869,22 +889,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#bridges" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Мосты (Bridges)
+        Сетевой стек
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Мосты (Bridges)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Как искать мосты
+        Драйверы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Реализация общения с железом
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Реализация общения с железом">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Прерывания
       
     </span>
   </a>
@@ -895,7 +937,7 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Компонента реберной двусвязности
+        Способы передачи информации
       
     </span>
   </a>
@@ -908,22 +950,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#articulation-pointscut-vertices" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Точки сочленения (Articulation Points/Cut Vertices)
+        Реализация сетевого стека
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Точки сочленения (Articulation Points/Cut Vertices)">
+    <nav class="md-nav" aria-label="Реализация сетевого стека">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#ethernet" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Как искать точки сочленения
+        Ethernet
       
     </span>
   </a>
@@ -931,10 +973,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
+  <a href="#ip" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Компонента вершинной двусвязности
+        IP
       
     </span>
   </a>
@@ -942,10 +984,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#block-cut-tree" class="md-nav__link">
+  <a href="#tcpudp" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Block-Cut Tree
+        TCP/UDP
       
     </span>
   </a>
@@ -988,7 +1030,7 @@
     
     
       <li class="md-path__item">
-        <a href="../" class="md-path__link">
+        <a href="../../algorithms/" class="md-path__link">
           
   <span class="md-ellipsis">
     Notes
@@ -1012,7 +1054,7 @@
         <a href="../" class="md-path__link">
           
   <span class="md-ellipsis">
-    Algorithms
+    Os hard
   </span>
 
         </a>
@@ -1034,113 +1076,122 @@
   
 
 
-<h1 id="bridges-and-articulation-points">Bridges and Articulation Points<a class="headerlink" href="#bridges-and-articulation-points" title="Permanent link">&para;</a></h1>
+<h1 id="xv6-networking">xv6-networking<a class="headerlink" href="#xv6-networking" title="Permanent link">&para;</a></h1>
 <hr />
-<p><a href="../../../">Конспекты</a> / <a href="../">Алгоритмы и Структуры Данных</a> / <a href="./">Лекция 2 - Bridges and Articulation Points</a></p>
+<p><a href="../../../">Конспекты</a> / <a href="../">Операционные системы (hard)</a> / <a href="./">Практика 4 - xv6-networking</a></p>
 <hr />
-<h2 id="bridges">Мосты (Bridges)<a class="headerlink" href="#bridges" title="Permanent link">&para;</a></h2>
-<h5 id="_1">Определение<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h5>
+<h2 id="_1">Сетевой стек<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Сеть - это некоторый набор протоколов и абстракций, которые имеют четкую иерархию и позволяют обмениваться устройствам пакетами по всем миру</p>
+<p>В какой то момент (уже достаточно давно) была приняла OSI Model, которая делит реализацию сети на определенные уровни абстракции, обозначают их <em>L1 (Physical)</em> - <em>L7 Application</em></p>
+<p><img alt="OSI-Model" src="../../../pictures/os-hard-sem3-prc4-img1.png" /></p>
 <ul>
-<li><strong>Мост</strong>: ребро в графе, удаление которого увеличивает число компонент (иными словами, мост не входит ни в один цикл). </li>
+<li><em>L1</em> реализует сетевая карта</li>
+<li>За <em>L2</em>-<em>L4</em>, как правило, отвечает ядро</li>
+<li>В <em>L5</em>-<em>L7</em> уже работают библиотеки в <em>user-space</em></li>
 </ul>
-<h3 id="_2">Как искать мосты<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<h5 id="_3">Идея<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h5>
-<p>Запустим DFS на дереве, найдем древесные и обратные ребра:
-- Мостом может быть только древесное ребро (обратное ребро по определению образует цикл)
-- Если мы подозреваем ребро, в том что оно мост, надо проверить что нету параллельных обратных ребер</p>
-<h5 id="_4">Алгоритм<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h5>
+<hr />
+<h2 id="_2">Драйверы<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p><em>Драйверы</em> используются в операционной системе как способ абстрагироваться от конкретного железа и его особенностей, в общем случае реализация конкретных протоколов общения с железками спрятана именно в драйвера</p>
+<p><em>HAL (Hardware Abstraction Layer)</em> - это абстракция обобщающая все драйвера и другие подобные компоненты, которая предоставляет какой-то общий интерфейс, с которым уже и работает OS</p>
+<hr />
+<h2 id="_3">Реализация общения с железом<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">Прерывания<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p><em>Прерывания</em> в контексте взаимодействия с устройствами это прямой способ для железа инициировать исполнения кода в процессоре, обычно прерывания реализованы прямо на уровне архитектуры процессора</p>
 <ul>
-<li>Сделаем динамичку, пусть <span class="arithmatex">\(d[v]\)</span> - глубина <span class="arithmatex">\(v\)</span>, а <span class="arithmatex">\(up[v]\)</span> - минимальная глубина на которую можно подняться из поддерева <span class="arithmatex">\(v\)</span> (если из поддерева <span class="arithmatex">\(v\)</span> ведут обратные ребра, мы хотим взять глубину того, что ведет выше всех)</li>
+<li>В простых системах изменения напряжения на ножке процессора уже генерирует прерывание: <ul>
+<li>Устанваливает регистры в положение, в котором понятно, что произошло</li>
+<li>Меняет <code>PC</code> в положение, в котором реализован обработчик прерываний  </li>
 </ul>
-<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span>
-<span class="normal"><a href="#__codelineno-0-12">12</a></span>
-<span class="normal"><a href="#__codelineno-0-13">13</a></span>
-<span class="normal"><a href="#__codelineno-0-14">14</a></span>
-<span class="normal"><a href="#__codelineno-0-15">15</a></span>
-<span class="normal"><a href="#__codelineno-0-16">16</a></span>
-<span class="normal"><a href="#__codelineno-0-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">dfs</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">parent</span><span class="p">,</span> <span class="n">depth</span><span class="p">)</span> <span class="p">{</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a>    <span class="n">visited</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">true</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a>    <span class="n">d</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">depth</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a>    <span class="n">up</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">depth</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a>    <span class="k">for</span> <span class="n">to</span> <span class="ow">in</span> <span class="n">g</span><span class="p">[</span><span class="n">v</span><span class="p">]:</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a>        <span class="k">if</span> <span class="p">(</span><span class="n">to</span> <span class="o">==</span> <span class="n">p</span><span class="p">):</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a>            <span class="k">continue</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a>        <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">visited</span><span class="p">[</span><span class="n">to</span><span class="p">]):</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9"></a>            <span class="c1"># Значит что ребро (v, to) - древесное</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10"></a>            <span class="n">dfs</span><span class="p">(</span><span class="n">to</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">depth</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11"></a>            <span class="k">if</span> <span class="p">(</span><span class="n">up</span><span class="p">[</span><span class="n">to</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">d</span><span class="p">[</span><span class="n">v</span><span class="p">]):</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12"></a>                <span class="c1"># Если выполнено, то ребро (v, to) - мост</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13"></a>            <span class="n">up</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">up</span><span class="p">[</span><span class="n">v</span><span class="p">],</span> <span class="n">up</span><span class="p">[</span><span class="n">to</span><span class="p">])</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14"></a>        <span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15"></a>            <span class="c1"># Значит что ребро (v, to) - обратное</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16"></a>            <span class="n">up</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">up</span><span class="p">[</span><span class="n">v</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="n">to</span><span class="p">])</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="p">}</span>
+</li>
+<li>В сложных системах может быть очередь прерываний, которую реализует контроллер прерываний (<em>PIC</em>)</li>
+</ul>
+<h3 id="_5">Способы передачи информации<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>Передачу информации между системой и железом делят на две категории:
+- Программный ввод/вывод (<em>PIO</em>)
+    - Работает с помощью регистров устройства, которые отображены на фиксированные адреса в физической памяти
+    - Но на самом деле работа с этими адресами не задействует память, а обработка происходит на уровне пространства памяти процессора
+    - Регистров по сути мало, так мы ждем прерывания, после которого можем считать данные с адреса
+    - Просто реализуется, но маленькая пропускная способность, не применимо для больших данных
+- Прямой доступ к памяти (DMA)
+    - Идея в том, чтобы передать в регистры устройства адрес буфера в нашей физической памяти, в которую ему будет разрешено писать
+    - Далее устройство сможет самостоятельно писать в этот буфер
+    - Получение данных от устройства происходит вообще без процессора 
+    - Прерывания происходят куда реже, что снижает нагрузку на процессор
+    - Сложнее реализовать и нужна память под буфер</p>
+<hr />
+<h2 id="_6">Реализация сетевого стека<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p><img alt="Network-stack" src="../../../pictures/os-hard-sem3-prc4-img2.png" />
+- Пакеты уровня N состоят из заголовка и данных. Данные состоят из заголовка пакета уровня N+1 и данных.
+- То есть заголовки пишутся последовательно
+- Многобайтовые переменные пишутся в Big-Endian (а в Risc-V используется Little-Endian)</p>
+<h3 id="ethernet">Ethernet<a class="headerlink" href="#ethernet" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1">// an Ethernet packet header (start of the packet).  </span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="k">struct</span><span class="w"> </span><span class="nc">eth</span><span class="w"> </span><span class="p">{</span><span class="w">  </span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">  </span><span class="n">uint8</span><span class="w"> </span><span class="n">dhost</span><span class="p">[</span><span class="n">ETHADDR_LEN</span><span class="p">];</span><span class="w">  </span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">  </span><span class="n">uint8</span><span class="w"> </span><span class="n">shost</span><span class="p">[</span><span class="n">ETHADDR_LEN</span><span class="p">];</span><span class="w">  </span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">  </span><span class="n">uint16</span><span class="w"> </span><span class="n">type</span><span class="p">;</span><span class="w">  </span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="p">}</span><span class="w"> </span><span class="n">__attribute__</span><span class="p">((</span><span class="n">packed</span><span class="p">));</span>
 </code></pre></div></td></tr></table></div>
-(Код даже +- рабочий, но если есть кратные ребра, то надо поаккуратнее)</p>
-<h3 id="_5">Компонента реберной двусвязности<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<h5 id="_6">Определение<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h5>
-<ul>
-<li><strong>Компонента реберной двусвязности</strong> — это подграф графа, в которой для любых двух вершин существуют как минимум два реберно-непересекающихся пути, их соединяющих (или же если проще, то это связный граф, в котором любые две вершины лежат на рёберно простом цикле).</li>
-</ul>
-<h5 id="_7">Утверждения<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h5>
-<ul>
-<li>Чтобы выделить компоненты реберной двусвязности, найдем все мосты, вырежем их, и тогда все компоненты графа будут реберно двусвязными.</li>
-<li>На выделенных компонентах (вернув мосты) можно сделать конденсацию, такая конденсация всегда будет деревом.</li>
-</ul>
-<hr />
-<h2 id="articulation-pointscut-vertices">Точки сочленения (Articulation Points/Cut Vertices)<a class="headerlink" href="#articulation-pointscut-vertices" title="Permanent link">&para;</a></h2>
-<h5 id="_8">Определение<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h5>
-<ul>
-<li><strong>Точка сочленения</strong>:  вершина в графе, удаление которой также приводит к увеличению числа компонент.</li>
-</ul>
-<h3 id="_9">Как искать точки сочленения<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
-<p>(Идея глобально почти такая же как и с мостами)</p>
-<h5 id="_10">Идея<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h5>
-<p>Посмотрим на вершину <span class="arithmatex">\(v\)</span> в графе, проверим что <span class="arithmatex">\(v\)</span> - т.с. (при удалении <span class="arithmatex">\(v\)</span> граф распадается на компоненты). 
-- Если у всех поддеревьев детей <span class="arithmatex">\(v\)</span> есть обратные ребра в предков <span class="arithmatex">\(v\)</span>, то <span class="arithmatex">\(v\)</span> - не т.с. 
-- Если есть хоть один ребенок, в чьем поддереве нету обратного ребра наверх, то <span class="arithmatex">\(v\)</span> - т.с. </p>
-<h5 id="_11">Алгоритм<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h5>
-<p>Почти не нужно менять алгоритм для мостов, просто меняем один <code>if</code>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">if</span> <span class="p">(</span><span class="n">up</span><span class="p">[</span><span class="n">to</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">d</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="n">v</span> <span class="ow">in</span> <span class="ow">not</span> <span class="n">root</span><span class="p">)</span> 
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a>    <span class="c1"># Если выполнено, то вершина v - точка сочленения</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a>    <span class="c1"># Но надо отдельно проверять корень :(</span>
+- Используется на уровне локальной сети, чтобы отправлять данные до маршрутизатора или другого компьютера
+- Структура очень простая: 
+    - MAC-адрес отправителя
+    - MAC-адрес получателя
+    - Тип пакета (Мы пока пользуемся только IP и ARP)
+- ARP это очень важный протокол, который зная IP, позволяет узнать отправителю пакета, на какой MAC-адрес его отправлять
+    - В сеть делается ARP запрос, чтобы узнать MAC получателя, после чего уже по нему будут отправляться IP запросы</p>
+<h3 id="ip">IP<a class="headerlink" href="#ip" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1">// an IP packet header (comes after an Ethernet header).  </span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="k">struct</span><span class="w"> </span><span class="nc">ip</span><span class="w"> </span><span class="p">{</span><span class="w">  </span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">  </span><span class="n">uint8</span><span class="w"> </span><span class="n">ip_vhl</span><span class="p">;</span><span class="w">   </span><span class="c1">// version &lt;&lt; 4 | header length &gt;&gt; 2  </span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">  </span><span class="n">uint8</span><span class="w"> </span><span class="n">ip_tos</span><span class="p">;</span><span class="w">   </span><span class="c1">// type of service  </span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">  </span><span class="n">uint16</span><span class="w"> </span><span class="n">ip_len</span><span class="p">;</span><span class="w">  </span><span class="c1">// total length, including this IP header  </span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">  </span><span class="n">uint16</span><span class="w"> </span><span class="n">ip_id</span><span class="p">;</span><span class="w">   </span><span class="c1">// identification  </span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">  </span><span class="n">uint16</span><span class="w"> </span><span class="n">ip_off</span><span class="p">;</span><span class="w">  </span><span class="c1">// fragment offset field  </span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">  </span><span class="n">uint8</span><span class="w"> </span><span class="n">ip_ttl</span><span class="p">;</span><span class="w">   </span><span class="c1">// time to live  </span>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">  </span><span class="n">uint8</span><span class="w"> </span><span class="n">ip_p</span><span class="p">;</span><span class="w">     </span><span class="c1">// protocol  </span>
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">  </span><span class="n">uint16</span><span class="w"> </span><span class="n">ip_sum</span><span class="p">;</span><span class="w">  </span><span class="c1">// checksum, covers just IP header  </span>
+<a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">  </span><span class="n">uint32</span><span class="w"> </span><span class="n">ip_src</span><span class="p">,</span><span class="w"> </span><span class="n">ip_dst</span><span class="p">;</span><span class="w">  </span>
+<a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="p">};</span>
 </code></pre></div></td></tr></table></div>
-Просто ищем хоть одного сына <span class="arithmatex">\(v\)</span>, у которого есть ребро ведущее строго выше <span class="arithmatex">\(v\)</span>, тогда </p>
-<h3 id="_12">Компонента вершинной двусвязности<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
-<h5 id="_13">Определение<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h5>
-<p><strong>Компоненты вершинной двусвязности</strong> - это подграфы неориентированного графа, в которых удаление любой вершины не нарушает связность оставшегося подграфа (другими словами, это связные подграфы, в которых любая вершина не является точкой сочленения).</p>
-<h5 id="_14">Идея<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h5>
-<p>Так легко, как с мостами не получится - надо страдать(</p>
-<h5 id="_15">Алгоритм<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h5>
-<ol>
-<li>Запустим DFS, который будет ходить по ребрам и хранить в стеке все ребра которые посетил (и обратные). </li>
-<li>В идем по графу, до момента когда мы вдруг поняли, что поднялись обратно в вершину <span class="arithmatex">\(v\)</span> из вершины <span class="arithmatex">\(u\)</span>, и <span class="arithmatex">\(v\)</span> это точка сочленения (см прошлый алгоритм). </li>
-<li>Тогда начинаем раскрутку стека пока не дойдем по ребра <span class="arithmatex">\((v \to u)\)</span> - мы выделили компоненту, удаляем её из стека. </li>
-<li>Последнее состояние, которое осталось после выхода из DFS - последняя компонента</li>
-</ol>
-<h3 id="block-cut-tree">Block-Cut Tree<a class="headerlink" href="#block-cut-tree" title="Permanent link">&para;</a></h3>
-<h5 id="_16">Задача<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h5>
-<ul>
-<li>Найти все вершины через которые пройдет любой путь из s в t (ну и вообще разные алгоритме на дереве можно тогда использовать)</li>
-</ul>
-<h5 id="_17">Идея<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h5>
-<p>Построим двудольный граф, в одной доле будут компоненты вершинной двусвязности, а в другой точки сочленения. Соединим точки сочленения с компонентами так, как было в изначальном графе.</p>
-<h5 id="_18">Утверждение<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h5>
-<ul>
-<li>Получится дерево - циклов не будет (потому что если есть цикл через точку сочленения <span class="arithmatex">\(c\)</span>, то при удалении <span class="arithmatex">\(c\)</span>, у нас останется пусть из одной компоненты в другую, следовательно <span class="arithmatex">\(c\)</span> не было т.с. <span class="arithmatex">\(\to\)</span> противоречие).</li>
-</ul>
+- Позволяет реализовать "мега-адрессацию", с помощью которой можно достучаться до любого компьютера в мире (ну это не правда, но мы сейчас закром на это глаза)
+- Имеет уже большое количество полей, такие как версия, адрес получателя, отправителя, тип протокола (UDP, TPC и тд) и тд
+- Так же умеет проверять контрольную сумму, дробить пакеты, ограничивать количество пересылок пакета</p>
+<h3 id="tcpudp">TCP/UDP<a class="headerlink" href="#tcpudp" title="Permanent link">&para;</a></h3>
+<p>В то время как IP мы использовали чтобы наш пакет попал в нужное устройство, то L4 уже позволяет нам с помощью заданного порта достучаться до конкретной программы на устройстве</p>
+<p>На этом уровне мы так же определяем то, как будем работать с передаваемыми данными - обрабатывать "как есть" или дополнительно проверять целостность и последовательность пакетов / перепосылать их при потере данных</p>
+<h4 id="udp">UDP<a class="headerlink" href="#udp" title="Permanent link">&para;</a></h4>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span>
+<span class="normal"><a href="#__codelineno-2-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="c1">// a UDP packet header (comes after an IP header).  </span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="k">struct</span><span class="w"> </span><span class="nc">udp</span><span class="w"> </span><span class="p">{</span><span class="w">  </span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">  </span><span class="n">uint16</span><span class="w"> </span><span class="n">sport</span><span class="p">;</span><span class="w">  </span><span class="c1">// source port  </span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">  </span><span class="n">uint16</span><span class="w"> </span><span class="n">dport</span><span class="p">;</span><span class="w">  </span><span class="c1">// destination port  </span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">  </span><span class="n">uint16</span><span class="w"> </span><span class="n">ulen</span><span class="p">;</span><span class="w">   </span><span class="c1">// length, including udp header, not including IP header  </span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">  </span><span class="n">uint16</span><span class="w"> </span><span class="n">sum</span><span class="p">;</span><span class="w">    </span><span class="c1">// checksum  </span>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="p">};</span>
+</code></pre></div></td></tr></table></div>
+- Его принцип работы максимально прост - просто передаем всё что пришло в следующий уровень сетевого стека (ими уже будут заниматься процессы из user-space)
+- Содержит порт отправителя, порт получателя и контрольную сумму</p>
 
 
 
