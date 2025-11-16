@@ -1,7 +1,7 @@
 # Memory allocators 
 ---
 
-[Конспекты](/index.md) / [Операционные системы (hard)](/notes/os-hard/index.md) / [Практика 2 - Memory allocators]([/notes/os-hard/sem3-prc2.md)
+[Конспекты](/index.md) / [Операционные системы (hard)](/notes/os-hard/index.md) / [Практика 2 - Memory allocators](/notes/os-hard/sem3-prc2.md)
 
 --- 
 ## Аллокаторы памяти
@@ -9,7 +9,7 @@
 - Аллокатор - это сущность, которая умеет аллоцировать и освобождать память, то есть выполнять операции:
 	- `malloc(n)` $\to$ `address`
 	- `free(address)`
-gi
+
 ### Реализация на linked-list (примитивный вариант)
 ##### Идея
 - Можно поделить память на блоки, проинициализируем связный список обозначающий наши блоки. 
