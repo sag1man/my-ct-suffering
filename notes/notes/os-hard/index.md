@@ -15,4 +15,5 @@ hide:
 ### Лекции
 - 
 ### Практики
-- [Практика 2 - Memory allocators]([/notes/os-hard/sem3-prc2.md)
+- [Практика 2 - Memory allocators](/notes/os-hard/sem3-prc2.md)
+- [Практика 4 - xv6-networking](/notes/os-hard/sem3-prc4.md)
